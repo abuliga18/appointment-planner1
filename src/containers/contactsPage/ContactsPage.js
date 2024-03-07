@@ -26,7 +26,7 @@ export const ContactsPage = ({contacts, addContact}) => {
   useEffect(()=> {
     const isNameDuplicate = contacts.some(contact => contact.name === name ); //returns true
     setIsDuplicate(isNameDuplicate) // isDuplicate = true;
-  }, [name])
+  }, [name, contacts])
 
   return (
     <div>
